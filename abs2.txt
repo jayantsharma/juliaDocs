@@ -1,0 +1,14 @@
+## abs2
+---
+abs2(x)
+
+Squared absolute value of "x"
+
+## Examples
+---
+```julia
+julia> abs2(2)
+4
+julia> abs2(-2)
+4
+```
