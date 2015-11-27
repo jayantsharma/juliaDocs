@@ -1,0 +1,8 @@
+## Examples
+---
+```julia
+julia> isempty([])
+true
+julia> isempty([1,2,3])
+false
+```

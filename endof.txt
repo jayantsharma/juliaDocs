@@ -1,0 +1,13 @@
+## Examples
+---
+```julia
+julia> foo = [1,2,3];
+julia> endof(foo)
+3
+julia> str = "hello";
+julia> endof(str)
+5
+julia> bar = zeros(Int64, 5, 2);
+julia> endof(bar)
+10
+```

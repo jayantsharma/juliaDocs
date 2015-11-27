@@ -1,0 +1,12 @@
+## Examples
+---
+```julia
+julia> a = [1,2,3];
+julia> b = [4,5,6,7];
+julia> foo = zip(a, b);
+julia> for i in foo
+            print(i)
+        end
+(1,4)(2,5)(3,6)
+julia> # 7 not paired
+```

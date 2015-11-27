@@ -1,0 +1,10 @@
+## Examples
+---
+```julia
+julia> arr = [1,2,3];
+julia> length(arr)
+3
+julia> str = "Hello World\n";
+julia> length(str)
+12
+```

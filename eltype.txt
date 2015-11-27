@@ -1,0 +1,13 @@
+## Examples
+---
+```julia
+julia> arr = [1,2,3];
+julia> eltype(arr)
+Int64
+julia> enum = enumerate(arr);
+julia> eltype(enum)
+(Int64,Int64)
+julia> dict = {"a"=>1, "b"=>2};      # a dictionary
+julia> eltype(dict)
+(Any,Any)
+```

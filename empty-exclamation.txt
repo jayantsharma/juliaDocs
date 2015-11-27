@@ -1,0 +1,8 @@
+## Examples
+---
+```julia
+julia> arr = [1,2,3];
+julia> empty!(arr);
+julia> isempty(arr)
+true
+```
