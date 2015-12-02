@@ -1,0 +1,16 @@
+## Examples
+---
+```julia
+julia> foo = [1 2];
+julia> bar = [2; 1];
+julia> baz = [8 9; 10 11]
+2x2 Array{Int64,2}:
+    8       9      
+ 10     11
+julia> broadcast_getindex(baz, foo, bar)      
+2x2 Array{Int64,2}:     
+ 9      11      
+ 8      10
+julia> #    foo -> [1 2; 1 2];  bar -> [2 2;  1 1];
+julia> #   [baz[1,2]  baz[2,2];    baz[1,1]   baz[2,1]]
+```

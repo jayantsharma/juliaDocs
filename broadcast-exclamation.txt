@@ -1,0 +1,15 @@
+## Examples
+---
+```julia
+julia> foo = [1 2]
+1x2 Array{Int64,2}:
+ 1      2
+julia> bar = [-1; -2]
+2x1 Array{Int64,2}:
+ -1
+ -2
+julia> baz = Array(Int8, (2,2));
+julia> broadcast!(*, baz, foo, bar)       
+ -1     -2
+ -2     -4
+```

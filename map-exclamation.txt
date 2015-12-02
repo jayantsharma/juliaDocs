@@ -1,0 +1,19 @@
+## Examples
+---
+```julia
+julia> foo = [1   2   3];
+julia> map!((x) -> x^3, foo);
+julia> foo
+1x3 Array{Int64,2}:
+ 1      8       27
+```
+#### Passing destination as a param
+```julia
+julia> function F(x,y)
+                x^2+y^2
+            end
+julia> bar = Array(Int64,1,3);
+julia> map!(F,   bar,    [3    6   12],   [4   8   5])
+1x3 Array{Int64,2}:
+ 25    100     169
+```

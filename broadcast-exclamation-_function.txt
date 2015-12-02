@@ -1,0 +1,12 @@
+## Examples
+---
+```julia
+julia> foo = [1 2];
+julia> bar = [9; 10];
+julia> baz = Array(Int64,2,2);
+julia> f = broadcast!_function(^);
+julia> f(baz, foo, bar)
+2x2 Array{Int64,2}:
+ 1       512
+ 1     1024
+```

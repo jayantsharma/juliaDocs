@@ -1,0 +1,13 @@
+## Examples
+---
+```julia
+julia> map((x) -> x^3, [1 2 3])
+1x3 Array{Int64,2}:
+ 1      8       27
+julia> function Foo(x,y)
+                return 2(x+y)
+            end
+julia> map(Foo, [1 2 3], ones(1, 3))
+1x3 Array{Float64,2}:
+ 4.0    6.0     8.0
+```

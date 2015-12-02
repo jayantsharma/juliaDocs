@@ -1,0 +1,17 @@
+## Examples
+---
+```julia
+julia> foo = [1 2]
+1x2 Array{Int64,2}:
+ 1      2
+julia> bar = [10; 9]
+2x1 Array{Int64,2}:
+ 10
+ 9
+julia> broadcast(+, foo, bar)       #   equivalent to foo .+ bar
+ 11     12
+ 10     11
+julia> broadcast((x,y) -> x^y, bar, foo)
+ 10     100
+ 9      81
+```

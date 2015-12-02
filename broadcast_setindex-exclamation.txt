@@ -1,0 +1,14 @@
+## Examples
+---
+```julia
+julia> foo = [1 2];
+julia> bar = [2; 1];
+julia> baz = [8 9; 10 11];
+julia> A = Array(Int64, 2, 2);
+julia> broadcast_setindex!(A, baz, foo, bar)      
+2x2 Array{Int64,2}:     
+ 10      8      
+ 11      9
+julia> #   foo -> [1 2; 1 2];  bar -> [2 2;  1 1];
+julia> #   baz[1,1] stored in A[foo[1],   bar[1]] and so on
+```

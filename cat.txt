@@ -1,0 +1,22 @@
+## Examples
+---
+```julia
+julia> foo = Array(Int8,2,2)
+2x2 Array{Int8,2}:
+ 2  0
+ 0  0
+julia> bar = Array(Int8,2,2)
+2x2 Array{Int8,2}:
+ -93    -111
+ 62             5
+julia> cat(1,foo,bar)
+4x2 Array{Int8,2}:
+ 2      0
+ 0      0
+ -93    -111
+ 62     5
+julia> cat(2,foo,bar)
+2x4 Array{Int8,2}:
+ 2      0       -93     -111
+ 0      0       62      5
+```

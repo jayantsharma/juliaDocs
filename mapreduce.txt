@@ -1,0 +1,8 @@
+## Examples
+---
+```julia
+julia> mapreduce((x) -> x^3, +, 9, [1:3])   #  = 9 + 1 + 8 + 27
+45
+julia> mapreduce((x) -> -x, *, [8:10])      #   = -8 * -9 * -10
+-720
+```
