@@ -7,8 +7,10 @@ julia> foo = [1 2 3; 4 5 6]
  4  5  6
 julia> first(foo)
 1
+
 julia> first([-1:-2:-10])
 -1
-julia> first(1:2:0)	# empty range
+
+julia> first(1:2:0)	        # empty range
 1
 ```
