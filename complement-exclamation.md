@@ -18,3 +18,4 @@ julia> for i in foo
 2
 3
 4
+```
