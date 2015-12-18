@@ -2,9 +2,7 @@
 ---
 ```julia
 julia> foo = [1];
-julia> append!([1],[2,3]);	# contrast with push!
-
-julia> foo
+julia> append!(foo, [2,3]);	foo	# contrast with push!
 3-element Array{Int64,1}:
  1
  2
