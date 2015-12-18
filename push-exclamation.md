@@ -2,6 +2,7 @@
 ---
 ```julia
 julia> foo = [1,2,3];
+
 julia> push!(foo, 4, 5, 6);
 
 julia> foo
