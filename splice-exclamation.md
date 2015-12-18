@@ -36,7 +36,7 @@ julia> foo
   3
  -1
 
-julia> splice!(foo, 4:3, 2)	# insert 2 before index 4
+julia> splice!(foo, 4:3, 2)	                # insert 2 before index 4
 0-element Array{Int64,1}
 
 julia> foo
