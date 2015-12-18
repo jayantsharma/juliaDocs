@@ -1,7 +1,7 @@
 ## Examples
 ---
 ```julia
-julia> a = IntSet([1:2:10]);
+julia> a = IntSet([1:2:10]);            # odd nums
 
 julia> symdiff!(a,6);
 julia> a
